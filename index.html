@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daksh's Resume</title>
+    <title>About Me</title>
     <style>
-        @import url('https://googleapis.com');
+        @import url('https://spotify.com');
 
         :root {
             --dark-red: #5c0606;
@@ -33,7 +33,8 @@
 
         /* Resume Container */
         .resume-container {
-            width: 800px;
+            width: 390px;
+            max-width: 100%;
             background-color: var(--bg-cream);
             border: 15px solid var(--dark-red);
             border-image: repeating-conic-gradient(var(--dark-red) 0% 25%, #ffffff 0% 50%) 8 / 15px;
@@ -81,9 +82,9 @@
 
         /* Main Layout Grid */
         .main-layout {
-            display: grid;
-            grid-template-columns: 260px 1fr;
-            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
             position: relative;
             z-index: 2;
         }
@@ -94,6 +95,9 @@
             flex-direction: column;
             gap: 25px;
             align-items: center;
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto;
         }
 
         .profile-img-container {
@@ -184,6 +188,9 @@
             flex-direction: column;
             padding-top: 20px;
             position: relative;
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto;
         }
 
         .hero-greeting {
@@ -312,6 +319,9 @@
             width: 100%;
             text-align: center;
             box-shadow: 4px 4px 0px var(--dark-red);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
         }
 
         .more-handle {
@@ -328,6 +338,13 @@
             font-weight: bold;
             line-height: 1.4;
         }
+
+        @media (max-width:480) {
+            .more-card{
+                flex-direction: column;
+            }
+            
+        }
     </style>
 </head>
 <body>
@@ -343,9 +360,15 @@
             
             <!-- Left Side Frame (Over the Gingham background) -->
             <div class="left-col">
+                <div class="hero-greeting" style="margin-bottom: 10px; text-align: center;">
+                    Hii,<br>
+                    <div>I'm Bridgette</div>
+                </div>
+
                 <div class="profile-img-container">
                     <!-- Replace with actual photo URL -->
                     <img src="aa76dd20-da52-4a9b-aff7-0a800da635cb.jpg" alt="Bridgette Profile">
+                    <source srcset="aa76dd20-da52-4a9b-aff7-0a800da635cb.jpg" type="image/webp">
                 </div>
 
                 <div class="contact-card">
@@ -371,7 +394,45 @@
                 </div>
             </div>
 
-              <div class="more-card">
+            <!-- Right Side Area -->
+            <div class="right-col">
+                <div class="exclamation-sticker">!!</div>
+
+                <div class="about-card">
+                    <div class="about-title">About me</div>
+                    <div class="about-text">
+                        I'm 16 years old currently Grade 11 student. I am a friendly and hardworking person who enjoys learning new things and spending time with my friends and family. I may sometimes be shy, but I always try my best to participate and improve myself. My goal is to finish my studies and achieve my dreams.
+                    </div>
+                </div>
+
+                <div class="fav-card">
+                    <div class="fav-title">My Favorites</div>
+                    <ul  class="fav-text">
+                        <li>Red</li>
+                        <li>Black</li>
+                        <li>Ice Cream</li>
+                        <li>Flower(Higanbana)</li>
+                        <li>Sports bike</li>
+                        <li>Kawasaki</li>
+                        <li>BMW</li>
+                        <li>Yamaha</li>
+                        <li>Ice Cream</li>
+                        <li>Sports car</li>
+                        <li>lamborghini</li>
+                        <li>BMW</li>
+                        <li>Aston Martin</li>
+                        <li>Ferrari</li>
+                        <li>McLaren</li>
+                        <li>Maserati</li>
+                        <li>Dodge</li>
+                        <li>Bugatti</li>
+                        <li>Pagani</li>
+                        <li>Koenigsegg</li>
+                        <li>Ice Cream</li>
+                    </ul>
+                </div>
+
+                <div class="more-card">
                     <div class="more-handle">Favorite Artists/bands</div>
                     <ul class="more-details">
                        <li>TV girl</li>
@@ -402,50 +463,7 @@
                        <li>Selena Gomez</li>
                        <li>Boyz || Men</li>
                     </ul>
-                        <a href="https://open.spotify.com/playlist/1ZgARxD0zH1UwYzHsSPe99?si=ESJEntxNSUqKIwVYqrOdcA&utm_source=facebook-messenger&pt=39c452a36a5f8c9537127d1ebfa72c1f&pi=DqdENXoYQ3ycw">Favorite Songs</a>
-                   
-                </div>
-
-            <!-- Right Side Area -->
-            <div class="right-col">
-                <div class="exclamation-sticker">!!</div>
-                
-                <div class="hero-greeting">
-                    Hii,<br>
-                    <div>I'm Bridgette</div>
-                </div>
-
-                <div class="about-card">
-                    <div class="about-title">About me</div>
-                    <div class="about-text">
-                        I'm 16 years old currently Grade 11 student. I am a friendly and hardworking person who enjoys learning new things and spending time with my friends and family. I may sometimes be shy, but I always try my best to participate and improve myself. My goal is to finish my studies and achieve my dreams.
-                    </div>
-                </div>
-
-                <div class="fav-card">
-                    <div class="fav-title">My Favorites</div>
-                    <ul  class="fav-text">
-                        <li>Red</li>
-                        <li>Black</li>
-                        <li>Ice Cream</li>
-                        <li>Flower(Higanbana)</li>
-                        <li>Sports bike</li>
-                        <li>Kawasaki</li>
-                        <li>BMW</li>
-                        <li>Yamaha</li>
-                        <li>Ice Cream</li>
-                        <li>Sports car</li>
-                        <li>lamborghini</li>
-                        <li>BMW</li>
-                        <li>Aston Martin</li>
-                        <li>Ferrari</li>
-                        <li>McLaren</li>
-                        <li>Maserati</li>
-                        <li>Dodge</li>
-                        <li>Koenigsegg</li>
-                        <li>Ice Cream</li>
-                    </ul>
-
+                    <a href="https://open.spotify.com/playlist/1ZgARxD0zH1UwYzHsSPe99?si=ESJEntxNSUqKIwVYqrOdcA&utm_source=facebook-messenger&pt=39c452a36a5f8c9537127d1ebfa72c1f&pi=DqdENXoYQ3ycw">Favorite Songs</a>
                 </div>
             </div>
 
